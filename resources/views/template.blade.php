@@ -6,8 +6,7 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
-    <div class="wrapper"> 
-        {{-- main-header navbar --}}
+    <div class="wrapper">
         @include('_partial.nav-header')
 
         <!-- Main Sidebar Container -->
@@ -22,15 +21,13 @@
             <!-- Main content -->
             <section class="content">
                 <div class="container-fluid">
-                   {{-- @yield('content') --}}
-                   @include('konten.konten')
+                    @yield("konten")
                 </div>
                 <!--/. container-fluid -->
             </section>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-        {{-- jangan diilangin dulu --}}
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
             <!-- Control sidebar content goes here -->
@@ -39,13 +36,13 @@
 
         <!-- Main Footer -->
         <footer class="main-footer">
-           @include('_partial.footer')
+            @include('_partial.footer')
         </footer>
     </div>
     <!-- ./wrapper -->
 
     <!-- REQUIRED SCRIPTS -->
-   @include('_partial/script')
+    @include('_partial/script')
 </body>
 
 </html>
